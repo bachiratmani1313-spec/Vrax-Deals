@@ -8,105 +8,82 @@
     <style>
         :root { --sun: #f59e0b; --amber: #d97706; --dark: #05070a; --card: #0f1117; }
         body { margin: 0; font-family: 'Montserrat', sans-serif; background: var(--dark); color: white; line-height: 1.6; }
-        
-        .navbar { background: rgba(5, 7, 10, 0.95); padding: 1.5rem; border-bottom: 1px solid var(--amber); text-align: center; }
+        .navbar { background: rgba(5, 7, 10, 0.95); padding: 1.5rem; border-bottom: 1px solid var(--amber); text-align: center; position: sticky; top: 0; z-index: 1000; }
         .logo { font-family: 'Playfair Display', serif; font-style: italic; font-size: 1.8rem; color: var(--sun); text-decoration: none; font-weight: 900; }
-
         .container { max-width: 1200px; margin: 60px auto; padding: 0 20px; }
-        
         .header-section { text-align: center; margin-bottom: 80px; }
-        .header-section h1 { font-family: 'Playfair Display', serif; font-style: italic; font-size: 3.5rem; margin: 0; }
+        .header-section h1 { font-family: 'Playfair Display', serif; font-style: italic; font-size: 3.5rem; margin: 0; line-height: 1.1; }
         .header-section p { color: var(--sun); letter-spacing: 5px; text-transform: uppercase; font-size: 0.8rem; font-weight: 900; margin-top: 15px; }
-
         .trust-banner { background: #111827; padding: 20px; border-radius: 20px; text-align: center; margin-bottom: 60px; border: 1px solid rgba(245, 158, 11, 0.2); font-size: 0.85rem; color: #94a3b8; }
-
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; }
-
-        .card { 
-            background: var(--card); border-radius: 40px; padding: 50px 30px; text-align: center; 
-            border: 1px solid rgba(255,255,255,0.03); display: flex; flex-direction: column; justify-content: space-between; min-height: 480px;
-            transition: 0.4s cubic-bezier(0.19, 1, 0.22, 1);
-        }
-        .card:hover { transform: translateY(-15px); border-color: var(--sun); box-shadow: 0 30px 60px rgba(0,0,0,0.5); }
-
-        .tag { font-size: 0.65rem; letter-spacing: 4px; color: var(--amber); font-weight: 900; text-transform: uppercase; margin-bottom: 25px; }
-        .title { font-family: 'Playfair Display', serif; font-style: italic; font-weight: 900; font-size: 2.2rem; line-height: 1.1; color: white; text-transform: uppercase; margin-bottom: 20px; }
-        
-        .price-dh { font-size: 3.2rem; font-weight: 900; color: white; margin: 25px 0; }
-        .price-dh span { font-size: 1rem; color: var(--sun); margin-left: 5px; font-weight: 400; }
-
-        .btn-action { 
-            background: linear-gradient(45deg, #d97706, #f59e0b); color: white; text-decoration: none; 
-            padding: 22px; border-radius: 50px; font-weight: 900; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2px;
-            transition: 0.3s;
-        }
-        .btn-action:hover { letter-spacing: 4px; filter: brightness(1.1); }
-
-        footer { padding: 100px 20px; text-align: center; opacity: 0.2; font-size: 0.7rem; letter-spacing: 2px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; }
+        .card { background: var(--card); border-radius: 40px; padding: 35px 20px; text-align: center; border: 1px solid rgba(255,255,255,0.03); display: flex; flex-direction: column; justify-content: space-between; min-height: 500px; transition: 0.4s cubic-bezier(0.19, 1, 0.22, 1); }
+        .card:hover { transform: translateY(-10px); border-color: var(--sun); box-shadow: 0 20px 40px rgba(0,0,0,0.6); }
+        .tag { font-size: 0.6rem; letter-spacing: 3px; color: var(--amber); font-weight: 900; text-transform: uppercase; margin-bottom: 20px; }
+        .title { font-family: 'Playfair Display', serif; font-style: italic; font-weight: 900; font-size: 1.3rem; line-height: 1.2; color: white; text-transform: uppercase; margin-bottom: 15px; height: 80px; display: flex; align-items: center; justify-content: center; }
+        .price-dh { font-size: 2.2rem; font-weight: 900; color: white; margin-bottom: 20px; }
+        .price-dh span { font-size: 0.8rem; color: var(--sun); margin-left: 5px; }
+        .btn-action { background: linear-gradient(45deg, #d97706, #f59e0b); color: white; text-decoration: none; padding: 15px; border-radius: 50px; font-weight: 900; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 2px; transition: 0.3s; }
+        .btn-action:hover { letter-spacing: 3px; filter: brightness(1.1); }
+        footer { padding: 80px 20px; text-align: center; opacity: 0.2; font-size: 0.6rem; letter-spacing: 2px; }
     </style>
 </head>
 <body>
 
-    <nav class="navbar">
-        <a href="index.html" class="logo">VRAX SELECT • MAROC</a>
-    </nav>
+    <nav class="navbar"><a href="index.html" class="logo">VRAX SELECT • MAROC</a></nav>
 
     <div class="container">
         <div class="header-section">
-            <p>Indépendance Énergétique</p>
+            <p>Rayon Solaire Intégral 2026</p>
             <h1>Solar Select</h1>
         </div>
 
-        <div class="trust-banner">
-            🇲🇦 Sélectionnée pour le Maroc • Performance Solaire Garantie • Prix en Dirhams (Indicatifs)
-        </div>
+        <div class="trust-banner">🇲🇦 58 Références d'Exception : Énergie, Sécurité & Habitat Autonome au Maroc</div>
 
         <div class="grid">
             <div class="card">
-                <div class="tag">Power Station</div>
-                <div class="title">Batterie<br>Solaire<br>Station 300W</div>
-                <div class="price-dh">1499<span>DH</span></div>
-                <a href="https://temu.to/k/e1j1h3h5l7n" target="_blank" class="btn-action">Vérifier le stock →</a>
+                <div class="tag">Off-Grid Security</div>
+                <div class="title">Caméra Solaire 4G<br>Double Objectif 2K<br>SIM & 9000mAh</div>
+                <div class="price-dh">495<span>DH</span></div>
+                <a href="https://temu.to/k/e5z0zkdl9xv" target="_blank" class="btn-action">Vérifier l'offre</a>
             </div>
 
             <div class="card">
-                <div class="tag">Security</div>
-                <div class="title">Projecteur<br>Solaire<br>192 LED</div>
-                <div class="price-dh">250<span>DH</span></div>
-                <a href="https://temu.to/k/em4mczx5jgy" target="_blank" class="btn-action">Vérifier le stock →</a>
+                <div class="tag">Hybrid Backup</div>
+                <div class="title">Générateur 3500W<br>Essence & Gaz<br>Moteur Performance</div>
+                <div class="price-dh">7650<span>DH</span></div>
+                <a href="https://temu.to/k/e3z2nmb919b" target="_blank" class="btn-action">Vérifier l'offre</a>
             </div>
 
             <div class="card">
-                <div class="tag">Garden Tech</div>
-                <div class="title">Système<br>Irrigation<br>Solaire</div>
-                <div class="price-dh">335<span>DH</span></div>
-                <a href="https://temu.to/k/e3a9ggyfthw" target="_blank" class="btn-action">Vérifier le stock →</a>
+                <div class="tag">Pro Security</div>
+                <div class="title">Caméra FHD 3MP<br>Rotation 355° PTZ<br>Smart Alexa Support</div>
+                <div class="price-dh">520<span>DH</span></div>
+                <a href="https://temu.to/k/evwobsso8v4" target="_blank" class="btn-action">Vérifier l'offre</a>
             </div>
 
             <div class="card">
-                <div class="tag">Outdoor</div>
-                <div class="title">Panneau<br>Solaire<br>Pliable</div>
-                <div class="price-dh">210<span>DH</span></div>
-                <a href="https://temu.to/k/e08s7ltti14" target="_blank" class="btn-action">Vérifier le stock →</a>
+                <div class="tag">Smart Home</div>
+                <div class="title">Chauffe-eau Compact<br>Instant Digital LED<br>Contrôle Inverter</div>
+                <div class="price-dh">1100<span>DH</span></div>
+                <a href="https://temu.to/k/eqbbvp74y2r" target="_blank" class="btn-action">Vérifier l'offre</a>
             </div>
 
             <div class="card">
-                <div class="tag">Lighting</div>
-                <div class="title">Luminaire<br>Suspendu<br>Double</div>
-                <div class="price-dh">95<span>DH</span></div>
-                <a href="https://temu.to/k/e5am0gynxv1" target="_blank" class="btn-action">Vérifier le stock →</a>
+                <div class="tag">Home Workshop</div>
+                <div class="title">Mini Poste à Souder<br>Inverter Gris Compact<br>Domestic Expert</div>
+                <div class="price-dh">1140<span>DH</span></div>
+                <a href="https://temu.to/k/efehbupd15v" target="_blank" class="btn-action">Vérifier l'offre</a>
             </div>
 
             <div class="card">
-                <div class="tag">Home Eco</div>
-                <div class="title">Kit 4<br>Lampes<br>Détecteur</div>
-                <div class="price-dh">275<span>DH</span></div>
-                <a href="https://temu.to/k/ebipofv2s3c" target="_blank" class="btn-action">Vérifier le stock →</a>
+                <div class="tag">Pro Tooling</div>
+                <div class="title">Poste à Souder MIG<br>FEIFANKE 3-en-1<br>Multi-Procédés</div>
+                <div class="price-dh">1150<span>DH</span></div>
+                <a href="https://temu.to/k/eo4ou9ma6p9" target="_blank" class="btn-action">Vérifier l'offre</a>
             </div>
-        </div>
-    </div>
 
-    <footer>© 2026 VRAX SELECT POUR VOUS • SÉLECTION MAROC</footer>
-
-</body>
-</html>
+            <div class="card">
+                <div class="tag">Energy Storage</div>
+                <div class="title">Batterie LifePO4<br>12V 100Ah 1280Wh<br>15 000 Cycles</div>
+                <div class="price-dh">1950<span>DH</span></div>
+                <a href="https://temu.to/k/eghdzyxk8xp" target="_blank" class="btn-action">Vérifier
