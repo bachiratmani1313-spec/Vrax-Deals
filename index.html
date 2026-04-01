@@ -3,73 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vrax Deals | La Boutique des Pépites</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <title>Vrax Deals | La Boutique de BBachir</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <style>
-        :root { --orange: #ff5000; --gold: #f59e0b; --dark: #0f172a; --text: #f8fafc; }
-        body { margin: 0; font-family: 'Inter', sans-serif; background: #0a0f1e; color: var(--text); }
-        .navbar { background: rgba(10, 15, 30, 0.95); padding: 1.2rem 5%; border-bottom: 2px solid var(--orange); text-align: center; }
-        .logo { font-family: 'Montserrat', sans-serif; color: var(--gold); font-weight: 800; font-size: 1.8rem; text-decoration: none; text-transform: uppercase; }
-        
-        .hero { padding: 80px 20px; text-align: center; background: radial-gradient(circle at top, #1e293b 0%, #0f172a 100%); border-bottom: 1px solid rgba(255,255,255,0.1); }
-        .hero h1 { font-family: 'Montserrat'; font-size: 2.5rem; margin-bottom: 10px; }
-        .hero p { color: var(--orange); font-weight: 700; letter-spacing: 2px; }
-
-        .container { max-width: 1000px; margin: 50px auto; padding: 0 20px; text-align: center; }
-        .intro-text { margin-bottom: 40px; color: #94a3b8; font-size: 1.1rem; }
-
-        /* BOUTONS DES RAYONS */
-        .category-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
-        
-        .category-card {
-            background: #1e293b; border: 2px solid rgba(255,255,255,0.1); border-radius: 20px;
-            padding: 40px 20px; text-decoration: none; transition: 0.4s; display: flex; flex-direction: column; align-items: center;
-        }
-        .category-card:hover { transform: translateY(-10px); border-color: var(--orange); background: #1e293b; box-shadow: 0 15px 30px rgba(255,80,0,0.2); }
-        
-        .cat-icon { font-size: 3rem; margin-bottom: 20px; }
-        .cat-name { font-family: 'Montserrat'; font-size: 1.4rem; color: white; margin-bottom: 15px; }
-        .btn-enter { background: var(--orange); color: white; padding: 10px 25px; border-radius: 50px; font-weight: 800; font-size: 0.8rem; text-transform: uppercase; }
-
-        footer { padding: 60px; text-align: center; color: #64748b; font-size: 0.75rem; border-top: 1px solid #1e293b; margin-top: 80px; }
+        :root { --orange: #ff5000; --gold: #f59e0b; --dark: #0a0f1e; }
+        body { margin: 0; font-family: 'Inter', sans-serif; background: var(--dark); color: white; text-align: center; }
+        .hero { padding: 80px 20px; background: radial-gradient(circle at top, #1e293b 0%, #0a0f1e 100%); border-bottom: 2px solid var(--orange); }
+        .logo { font-family: 'Montserrat'; font-size: 2.5rem; color: var(--gold); text-transform: uppercase; margin-bottom: 10px; }
+        .container { max-width: 900px; margin: 50px auto; padding: 0 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+        .card { background: #1e293b; padding: 40px 20px; border-radius: 20px; text-decoration: none; border: 1px solid rgba(255,255,255,0.1); transition: 0.3s; }
+        .card:hover { transform: translateY(-10px); border-color: var(--orange); box-shadow: 0 10px 30px rgba(255,80,0,0.2); }
+        .cat-title { font-family: 'Montserrat'; font-size: 1.5rem; color: white; margin: 15px 0; }
+        .btn { background: var(--orange); color: white; padding: 12px 25px; border-radius: 10px; font-weight: 800; display: inline-block; margin-top: 15px; }
     </style>
 </head>
 <body>
-
-    <nav class="navbar">
-        <a href="index.html" class="logo">Vrax Deals</a>
-    </nav>
-
-    <header class="hero">
-        <h1>Boutique Officielle BBachir</h1>
-        <p>LES MEILLEURES PÉPITES DU WEB</p>
-    </header>
-
+    <div class="hero">
+        <div class="logo">Vrax Deals</div>
+        <p style="letter-spacing: 2px; font-weight: 700; color: var(--orange);">SÉLECTION OFFICIELLE BBACHIR</p>
+    </div>
     <div class="container">
-        <p class="intro-text">Bienvenue dans ma sélection exclusive. J'ai déniché pour vous les articles les plus utiles aux prix les plus bas du marché. Choisissez un rayon pour commencer :</p>
-
-        <div class="category-grid">
-            
-            <a href="cuisine.html" class="category-card">
-                <div class="cat-icon">🍳</div>
-                <div class="cat-name">Cuisine & Maison</div>
-                <div style="color: #94a3b8; margin-bottom: 20px;">Friteuse XXL, Presse-ail, Gadgets...</div>
-                <div class="btn-enter">ENTRER DANS LE RAYON</div>
+        <h2 style="margin-bottom: 40px;">Choisissez votre rayon :</h2>
+        <div class="grid">
+            <a href="cuisine.html" class="card">
+                <div style="font-size: 3rem;">🍳</div>
+                <div class="cat-title">Cuisine & Maison</div>
+                <div class="btn">ENTRER</div>
             </a>
-
-            <div class="category-card" style="opacity: 0.6; cursor: not-allowed;">
-                <div class="cat-icon">📱</div>
-                <div class="cat-name">High-Tech & Gadgets</div>
-                <div style="color: #94a3b8; margin-bottom: 20px;">Bientôt disponible...</div>
-                <div class="btn-enter" style="background: #334155;">ARRIVAGE PROCHAIN</div>
-            </div>
-
+            <a href="hightech.html" class="card">
+                <div style="font-size: 3rem;">📱</div>
+                <div class="cat-title">High-Tech</div>
+                <div class="btn">ENTRER</div>
+            </a>
         </div>
     </div>
-
-    <footer>
-        <p>© 2026 Vrax Deals | Partenaire Influenceur BBachir</p>
-    </footer>
-
+    <footer style="margin-top: 100px; opacity: 0.5; font-size: 0.8rem; padding-bottom: 50px;">© 2026 Vrax Deals | Partenaire Temu & Amazon</footer>
 </body>
 </html>
