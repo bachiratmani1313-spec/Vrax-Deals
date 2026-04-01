@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High-Tech & Gadgets | Vrax Deals par BBachir</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root { --orange: #ff5000; --blue-tech: #3b82f6; --gold: #f59e0b; --dark: #0f172a; --card: #1e293b; --text: #f8fafc; }
+        body { margin: 0; font-family: 'Inter', sans-serif; background: #0a0f1e; color: var(--text); line-height: 1.6; }
+        
+        .navbar { background: rgba(10, 15, 30, 0.95); padding: 1rem 5%; position: sticky; top: 0; z-index: 1000; border-bottom: 2px solid var(--blue-tech); display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-family: 'Montserrat', sans-serif; color: var(--gold); font-weight: 800; text-decoration: none; text-transform: uppercase; letter-spacing: 1px; }
+        .back-btn { color: #94a3b8; text-decoration: none; font-size: 0.8rem; font-weight: 700; border: 1px solid #334155; padding: 8px 15px; border-radius: 8px; transition: 0.3s; }
+        .back-btn:hover { background: white; color: black; }
+
+        .container { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+        .header-section { text-align: center; margin-bottom: 50px; }
+        .header-section h1 { font-family: 'Montserrat'; font-size: 2.5rem; color: var(--text); margin-bottom: 10px; }
+        .header-section p { color: var(--blue-tech); font-weight: 700; text-transform: uppercase; letter-spacing: 2px; }
+
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        
+        .card { background: var(--card); border: 1px solid rgba(255,255,255,0.1); border-radius: 24px; padding: 25px; transition: 0.4s; position: relative; display: flex; flex-direction: column; height: 100%; }
+        .card:hover { transform: translateY(-10px); border-color: var(--blue-tech); box-shadow: 0 15px 40px rgba(59, 130, 246, 0.15); }
+
+        .badge { position: absolute; top: 20px; left: 20px; background: var(--blue-tech); color: white; padding: 5px 12px; border-radius: 8px; font-size: 0.7rem; font-weight: 900; z-index: 2; text-transform: uppercase; }
+
+        .img-box { width: 100%; height: 220px; background: #0f172a; border-radius: 15px; margin-bottom: 20px; overflow: hidden; }
+        .img-box img { width: 100%; height: 100%; object-fit: cover; }
+
+        .title { font-family: 'Montserrat'; font-size: 1.1rem; margin: 0 0 10px 0; height: 55px; overflow: hidden; color: white; }
+        .price { font-size: 2rem; font-weight: 800; color: var(--gold); margin-bottom: 15px; }
+        .desc { font-size: 0.85rem; color: #94a3b8; margin-bottom: 20px; height: 60px; overflow: hidden; }
+        
+        .btn-temu { background: var(--orange); color: white; text-decoration: none; text-align: center; padding: 15px; border-radius: 12px; font-weight: 800; font-size: 0.85rem; text-transform: uppercase; transition: 0.3s; margin-top: auto; }
+        .btn-temu:hover { background: #e64a00; transform: scale(1.03); box-shadow: 0 8px 20px rgba(255,80,0,0.3); }
+
+        footer { padding: 60px; text-align: center; color: #64748b; font-size: 0.75rem; border-top: 1px solid #1e293b; margin-top: 80px; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">Vrax Deals</a>
+        <a href="index.html" class="back-btn">← ACCUEIL</a>
+    </nav>
+
+    <div class="container">
+        <div class="header-section">
+            <h1>High-Tech & Gadgets</h1>
+            <p>Sélection BBachir • Innovation au Meilleur Prix</p>
+        </div>
+
+        <div class="grid">
+
+            <div class="card">
+                <span class="badge">PROMO GEEK</span>
+                <div class="img-box"><img src="https://images.unsplash.com/photo-1589156229687-496a31ad1d1f?auto=format&fit=crop&w=400&q=80"></div>
+                <h3 class="title">Stabilisateur Cardan 3 Axes Pliable AOCHUAN</h3>
+                <div class="price">32,99€</div>
+                <p class="desc">Idéal pour Vlog, TikTok et YouTube. Pliable, compatible iPhone et Android.</p>
+                <a href="https://temu.to/k/egvx1w4ich8" target="_blank" class="btn-temu">Profiter de l'offre Temu</a>
+            </div>
+
+            </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Vrax Deals | Partenaire Temu Officiel</p>
+    </footer>
+
+</body>
+</html>
