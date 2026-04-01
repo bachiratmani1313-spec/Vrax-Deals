@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vrax Deals | Les Meilleures Pépites Amazon & Temu</title>
+    <meta name="description" content="Découvrez notre sélection exclusive de gadgets, high-tech et maison aux prix les plus bas.">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --temu-orange: #ff5000;
+            --amazon-blue: #232f3e;
+            --gold: #f59e0b;
+            --dark-bg: #0f172a;
+            --text: #f8fafc;
+        }
+
+        body {
+            margin: 0; font-family: 'Inter', sans-serif;
+            background: #0a0f1e; color: var(--text); line-height: 1.6;
+        }
+
+        .navbar {
+            background: rgba(10, 15, 30, 0.95); backdrop-filter: blur(10px);
+            padding: 1rem 5%; position: sticky; top: 0; z-index: 1000;
+            border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; justify-content: space-between; align-items: center;
+        }
+
+        .logo { font-family: 'Montserrat', sans-serif; color: var(--gold); font-weight: 800; font-size: 1.5rem; text-decoration: none; text-transform: uppercase; }
+        
+        .hero {
+            padding: 60px 20px; text-align: center;
+            background: linear-gradient(45deg, #0f172a, #1e293b);
+            border-bottom: 3px solid var(--gold);
+        }
+
+        .hero h1 { font-family: 'Montserrat'; font-size: 2.5rem; margin-bottom: 10px; }
+        .hero p { color: var(--gold); font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
+
+        .container { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+
+        .section-title {
+            font-family: 'Montserrat'; font-size: 1.5rem; margin-bottom: 30px;
+            display: flex; align-items: center; gap: 15px; border-left: 5px solid var(--temu-orange); padding-left: 15px;
+        }
+
+        .deals-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px;
+        }
+
+        .deal-card {
+            background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 20px; padding: 20px; transition: 0.3s; position: relative; overflow: hidden;
+        }
+
+        .deal-card:hover { transform: translateY(-10px); border-color: var(--gold); background: rgba(255,255,255,0.05); }
+
+        .badge {
+            position: absolute; top: 15px; right: 15px; padding: 5px 12px;
+            border-radius: 50px; font-size: 0.7rem; font-weight: 800; text-transform: uppercase;
+        }
+        .badge-temu { background: var(--temu-orange); color: white; }
+        .badge-amazon { background: #ff9900; color: black; }
+
+        .price-tag { font-size: 1.8rem; font-weight: 800; color: var(--gold); margin: 15px 0; }
+        .old-price { font-size: 0.9rem; text-decoration: line-through; color: #64748b; margin-left: 10px; }
+
+        .btn-buy {
+            display: block; width: 100%; padding: 12px; border-radius: 10px;
+            text-align: center; text-decoration: none; font-weight: 800; font-size: 0.8rem;
+            text-transform: uppercase; transition: 0.3s;
+        }
+        .btn-temu { background: white; color: var(--temu-orange); border: 2px solid var(--temu-orange); }
+        .btn-temu:hover { background: var(--temu-orange); color: white; }
+        
+        .btn-amazon { background: #ff9900; color: black; }
+        .btn-amazon:hover { background: #e68a00; }
+
+        footer { padding: 60px 20px; text-align: center; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.8rem; color: #64748b; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">Vrax Deals</a>
+        <div style="font-size: 0.7rem; font-weight: 700; color: #94a3b8;">SÉLECTION PARTENAIRE OFFICIELLE</div>
+    </nav>
+
+    <header class="hero">
+        <h1>Ventes Flash & Pépites</h1>
+        <p>Le meilleur du Web • Prix Direct Usine</p>
+    </header>
+
+    <div class="container">
+
+        <h2 class="section-title">⚡ Arrivages TEMU (Prix Cassés)</h2>
+        <div class="deals-grid">
+            
+            <div class="deal-card">
+                <span class="badge badge-temu">Économisez 34€</span>
+                <h3 style="font-size: 1rem; height: 50px;">Friteuse à Air Chaud XXL 23L</h3>
+                <div class="price-tag">104,46€</div>
+                <p style="font-size: 0.8rem; color: #94a3b8;">15 Programmes • Écran Tactile • Accessoires inclus</p>
+                <a href="TON_LIEN_TEMU_FRITEUSE" class="btn-buy btn-temu">PROFITER DE L'OFFRE TEMU</a>
+            </div>
+
+            <div class="deal-card">
+                <span class="badge badge-temu">Best-Seller</span>
+                <h3 style="font-size: 1rem; height: 50px;">Stabilisateur Smartphone 3 Axes</h3>
+                <div class="price-tag">32,99€</div>
+                <p style="font-size: 0.8rem; color: #94a3b8;">Idéal Vlog & TikTok • Pliable • Compatible iOS/Android</p>
+                <a href="TON_LIEN_TEMU_STABILISATEUR" class="btn-buy btn-temu">VOIR LE DEAL TEMU</a>
+            </div>
+
+            <div class="deal-card">
+                <span class="badge badge-temu">Top Utile</span>
+                <h3 style="font-size: 1rem; height: 50px;">Nettoyeur de Tapis Portatif 800W</h3>
+                <div class="price-tag">38,08€</div>
+                <p style="font-size: 0.8rem; color: #94a3b8;">Pour Canapés, Tapis et Tissus • Forte Aspiration</p>
+                <a href="TON_LIEN_TEMU_NETTOYEUR" class="btn-buy btn-temu">COMMANDER SUR TEMU</a>
+            </div>
+
+        </div>
+
+        <h2 class="section-title" style="border-left-color: #ff9900; margin-top: 60px;">📦 Sélection AMAZON (Livraison Rapide)</h2>
+        <div class="deals-grid">
+            
+            <div class="deal-card">
+                <span class="badge badge-amazon">Choix Vrax</span>
+                <h3 style="font-size: 1rem; height: 50px;">Kit Caméra Nettoyage Oreilles</h3>
+                <div class="price-tag">19,99€ <span class="old-price">29€</span></div>
+                <p style="font-size: 0.8rem; color: #94a3b8;">Haute Définition • 6 Accessoires • Connexion Wifi</p>
+                <a href="https://www.amazon.fr/s?k=nettoyeur+oreilles+camera&tag=vrax-21" class="btn-buy btn-amazon">ACHETER SUR AMAZON</a>
+            </div>
+
+            <div class="deal-card">
+                <span class="badge badge-amazon">Premium</span>
+                <h3 style="font-size: 1rem; height: 50px;">Niveau Laser Auto-Nivelant 360°</h3>
+                <div class="price-tag">45,00€</div>
+                <p style="font-size: 0.8rem; color: #94a3b8;">Batterie 4800mAh • Grande Précision • Projets Maison</p>
+                <a href="https://www.amazon.fr/s?k=niveau+laser+360&tag=vrax-21" class="btn-buy btn-amazon">VOIR SUR AMAZON</a>
+            </div>
+
+            <div class="deal-card">
+                <span class="badge badge-amazon">Utile</span>
+                <h3 style="font-size: 1rem; height: 50px;">Presse-Agrumes Automatique USB</h3>
+                <div class="price-tag">14,90€</div>
+                <p style="font-size: 0.8rem; color: #94a3b8;">Portable • Batterie Rechargeable • Design Compact</p>
+                <a href="https://www.amazon.fr/s?k=presse+agrumes+electrique+portable&tag=vrax-21" class="btn-buy btn-amazon">PROFITER SUR AMAZON</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <p>© 2026 Vrax Deals | Partenaire Amazon & Temu</p>
+        <p style="margin-top: 10px; font-size: 0.6rem;">En tant que partenaire, nous réalisons un bénéfice sur les achats remplissant les conditions requises.</p>
+    </footer>
+
+</body>
+</html>
