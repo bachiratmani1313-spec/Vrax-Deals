@@ -4,40 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vrax Deals | La Boutique de BBachir</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <style>
-        :root { --orange: #ff5000; --gold: #f59e0b; --dark: #0a0f1e; }
+        :root { --orange: #ff5000; --gold: #f59e0b; --dark: #0a0f1e; --blue-tech: #3b82f6; }
         body { margin: 0; font-family: 'Inter', sans-serif; background: var(--dark); color: white; text-align: center; }
-        .hero { padding: 80px 20px; background: radial-gradient(circle at top, #1e293b 0%, #0a0f1e 100%); border-bottom: 2px solid var(--orange); }
-        .logo { font-family: 'Montserrat'; font-size: 2.5rem; color: var(--gold); text-transform: uppercase; margin-bottom: 10px; }
-        .container { max-width: 900px; margin: 50px auto; padding: 0 20px; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
-        .card { background: #1e293b; padding: 40px 20px; border-radius: 20px; text-decoration: none; border: 1px solid rgba(255,255,255,0.1); transition: 0.3s; }
-        .card:hover { transform: translateY(-10px); border-color: var(--orange); box-shadow: 0 10px 30px rgba(255,80,0,0.2); }
-        .cat-title { font-family: 'Montserrat'; font-size: 1.5rem; color: white; margin: 15px 0; }
-        .btn { background: var(--orange); color: white; padding: 12px 25px; border-radius: 10px; font-weight: 800; display: inline-block; margin-top: 15px; }
+        .hero { padding: 60px 20px; background: linear-gradient(135deg, #1e293b 0%, #0a0f1e 100%); border-bottom: 3px solid var(--orange); }
+        .logo { font-family: 'Montserrat'; font-size: 2.8rem; color: var(--gold); text-transform: uppercase; margin-bottom: 5px; letter-spacing: -1px; }
+        .container { max-width: 1000px; margin: 50px auto; padding: 0 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        
+        .card { background: #1e293b; padding: 50px 30px; border-radius: 24px; text-decoration: none; border: 1px solid rgba(255,255,255,0.05); transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); position: relative; overflow: hidden; }
+        .card:hover { transform: translateY(-12px); border-color: var(--orange); box-shadow: 0 20px 40px rgba(0,0,0,0.4); }
+        
+        /* Style des icônes pro */
+        .icon-box { font-size: 3.5rem; margin-bottom: 20px; color: var(--orange); transition: 0.3s; }
+        .card:hover .icon-box { color: var(--gold); transform: scale(1.1); }
+        
+        .cat-title { font-family: 'Montserrat'; font-size: 1.4rem; color: white; margin: 10px 0; text-transform: uppercase; }
+        .btn { background: var(--orange); color: white; padding: 14px 30px; border-radius: 12px; font-weight: 800; display: inline-block; margin-top: 20px; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px; }
+        
+        footer { margin-top: 80px; opacity: 0.4; font-size: 0.8rem; padding: 40px; border-top: 1px solid rgba(255,255,255,0.1); }
     </style>
 </head>
 <body>
     <div class="hero">
         <div class="logo">Vrax Deals</div>
-        <p style="letter-spacing: 2px; font-weight: 700; color: var(--orange);">SÉLECTION OFFICIELLE BBACHIR</p>
+        <p style="letter-spacing: 3px; font-weight: 700; color: var(--orange); text-transform: uppercase; font-size: 0.9rem;">Sélection Influenceur Officielle</p>
     </div>
+
     <div class="container">
-        <h2 style="margin-bottom: 40px;">Choisissez votre rayon :</h2>
         <div class="grid">
             <a href="cuisine.html" class="card">
-                <div style="font-size: 3rem;">🍳</div>
-                <div class="cat-title">Cuisine & Maison</div>
-                <div class="btn">ENTRER</div>
+                <div class="icon-box"><i class="fas fa-utensils"></i></div>
+                <div class="cat-title">Maison & Cuisine</div>
+                <p style="color: #94a3b8; font-size: 0.9rem;">Équipements malins et confort domestique.</p>
+                <div class="btn">Découvrir</div>
             </a>
+
             <a href="hightech.html" class="card">
-                <div style="font-size: 3rem;">📱</div>
-                <div class="cat-title">High-Tech</div>
-                <div class="btn">ENTRER</div>
+                <div class="icon-box" style="color: var(--blue-tech);"><i class="fas fa-microchip"></i></div>
+                <div class="cat-title">High-Tech & Solaire</div>
+                <p style="color: #94a3b8; font-size: 0.9rem;">Gadgets innovants et énergie du futur.</p>
+                <div class="btn" style="background: var(--blue-tech);">Explorer</div>
             </a>
         </div>
     </div>
-    <footer style="margin-top: 100px; opacity: 0.5; font-size: 0.8rem; padding-bottom: 50px;">© 2026 Vrax Deals | Partenaire Temu & Amazon</footer>
+
+    <footer>
+        <p>© 2026 Vrax Deals | Partenaire Temu & Amazon | Design by BBachir</p>
+    </footer>
 </body>
 </html>
