@@ -3,97 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VRAX DEALS | Sélection BBachir</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700;1,900&family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
+    <title>Vrax Select Pour Vous | L'Essentiel Choisi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700;1,900&family=Montserrat:wght@300;400;900&display=swap" rel="stylesheet">
     <style>
-        :root { --orange: #ff5000; --blue: #3b82f6; --dark: #05070a; --gold: #f59e0b; }
+        :root { --orange: #ff5000; --blue: #3b82f6; --sun: #f59e0b; --dark: #05070a; }
         
         body { margin: 0; font-family: 'Montserrat', sans-serif; background: var(--dark); color: white; min-height: 100vh; display: flex; flex-direction: column; }
         
-        .hero { padding: 80px 20px; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .hero { padding: 80px 20px 40px 20px; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.05); }
         
-        /* Titre VRAX DEALS version Luxe */
+        /* Logo VRAX SELECT POUR VOUS */
         .main-logo { 
             font-family: 'Playfair Display', serif; 
             font-style: italic; 
             font-weight: 900; 
-            font-size: 4.5rem; 
-            color: var(--gold); 
+            font-size: 3.5rem; 
+            color: white; 
             text-transform: uppercase; 
-            letter-spacing: -3px;
+            letter-spacing: -1px;
             margin: 0;
             line-height: 1;
         }
-        .subtitle { letter-spacing: 6px; text-transform: uppercase; font-size: 0.7rem; color: var(--orange); font-weight: 800; margin-top: 10px; }
-
-        .container { max-width: 1100px; margin: auto; padding: 40px 20px; width: 100%; box-sizing: border-box; }
+        .main-logo span { color: var(--sun); }
         
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
+        .subtitle { 
+            letter-spacing: 5px; 
+            text-transform: uppercase; 
+            font-size: 0.7rem; 
+            color: var(--orange); 
+            font-weight: 800; 
+            margin-top: 15px;
+        }
+
+        .container { max-width: 1200px; margin: auto; padding: 40px 20px; width: 100%; box-sizing: border-box; }
+        
+        /* Grille pour 3 éléments */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
 
         .nav-card { 
             text-decoration: none; 
-            padding: 80px 40px; 
-            border-radius: 40px; 
+            padding: 70px 30px; 
+            border-radius: 35px; 
             text-align: center; 
-            transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transition: 0.4s ease;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            border: 1px solid rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.03);
+            background: #0f1014;
         }
 
-        /* Onglet MAISON & CUISINE */
-        .card-cuisine { background: linear-gradient(135deg, #111827 0%, #05070a 100%); }
-        .card-cuisine:hover { transform: translateY(-15px); border-color: var(--orange); box-shadow: 0 20px 40px rgba(255, 80, 0, 0.15); }
-        
-        /* Onglet HIGH-TECH */
-        .card-tech { background: linear-gradient(135deg, #0f172a 0%, #020617 100%); }
-        .card-tech:hover { transform: translateY(-15px); border-color: var(--blue); box-shadow: 0 20px 40px rgba(59, 130, 246, 0.15); }
+        .nav-card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.6); }
 
         .nav-title { 
             font-family: 'Playfair Display', serif; 
             font-style: italic; 
             font-weight: 900; 
-            font-size: 2.8rem; 
-            line-height: 1;
-            margin-bottom: 15px;
+            font-size: 2.2rem; 
+            line-height: 1.1;
+            margin: 15px 0;
             text-transform: uppercase;
+            color: white;
         }
 
-        .cuisine-text { color: var(--gold); }
-        .tech-text { color: var(--blue); }
+        /* Couleurs spécifiques */
+        .border-home:hover { border-color: var(--orange); }
+        .border-tech:hover { border-color: var(--blue); }
+        .border-sun:hover { border-color: var(--sun); }
 
-        .nav-desc { font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,0.4); font-weight: 600; }
+        .nav-desc { font-size: 0.6rem; letter-spacing: 3px; text-transform: uppercase; color: rgba(255,255,255,0.3); font-weight: 700; }
+        .explore { font-size: 0.75rem; font-weight: 900; margin-top: 20px; letter-spacing: 2px; }
 
-        footer { padding: 60px; text-align: center; opacity: 0.3; font-size: 0.7rem; letter-spacing: 2px; }
+        footer { padding: 60px; text-align: center; opacity: 0.2; font-size: 0.6rem; letter-spacing: 3px; }
     </style>
 </head>
 <body>
 
     <header class="hero">
-        <h1 class="main-logo">Vrax Deals</h1>
-        <div class="subtitle">Sélection Exclusive par BBachir</div>
+        <h1 class="main-logo">VraxSelect <span>Pour Vous</span></h1>
+        <div class="subtitle">L'Utile & L'Indispensable</div>
     </header>
 
     <div class="container">
         <div class="grid">
             
-            <a href="cuisine.html" class="nav-card card-cuisine">
-                <span class="nav-desc">Volume 01</span>
-                <h2 class="nav-title cuisine-text">Maison<br>& Cuisine</h2>
-                <div class="nav-desc">Explorer la collection →</div>
+            <a href="cuisine.html" class="nav-card border-home">
+                <span class="nav-desc">Collection 01</span>
+                <h2 class="nav-title">Maison<br>& Cuisine</h2>
+                <div class="explore" style="color:var(--orange)">DÉCOUVRIR →</div>
             </a>
 
-            <a href="hightech.html" class="nav-card card-tech">
-                <span class="nav-desc">Volume 02</span>
-                <h2 class="nav-title tech-text">High-Tech<br>& Solaire</h2>
-                <div class="nav-desc">Explorer l'innovation →</div>
+            <a href="hightech.html" class="nav-card border-tech">
+                <span class="nav-desc">Collection 02</span>
+                <h2 class="nav-title">High-Tech<br>& Innovation</h2>
+                <div class="explore" style="color:var(--blue)">EXPLORER →</div>
+            </a>
+
+            <a href="solaire.html" class="nav-card border-sun">
+                <span class="nav-desc">Collection 03</span>
+                <h2 class="nav-title">Énergie<br>Solaire</h2>
+                <div class="explore" style="color:var(--sun)">VOIR LES OFFRES →</div>
             </a>
 
         </div>
     </div>
 
-    <footer>© 2026 VRAX DEALS • TOUS DROITS RÉSERVÉS</footer>
+    <footer>© 2026 VRAX SELECT POUR VOUS • BBACHIR SELECTION</footer>
 
 </body>
 </html>
